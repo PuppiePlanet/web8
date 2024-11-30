@@ -1,0 +1,21 @@
+.input-linea {
+  border: 0;
+  border-top: 5px solid #7fcbcb;
+  border-left: 1px solid #a7a5a5;
+  border-right: 1px solid #a7a5a5;
+  border-bottom: 1px solid #a7a5a5;
+  border-radius: 0;  
+}
+
+.input-linea:focus {
+  outline: none;
+  border-top: 5px solid #fa0;
+  border-left: 1px solid #a7a5a5;
+  border-right: 1px solid #a7a5a5;
+  border-bottom: 1px solid #a7a5a5;
+  
+}
+
+.input-linea.active {
+  border-bottom-color: #a7a5a5;
+}

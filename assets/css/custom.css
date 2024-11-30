@@ -1,0 +1,377 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  background-size: 100% auto;
+  background-color: #FFF;
+}
+
+:root
+{
+  --app-primary-text-color: #010101;
+  --app-secondary-text-color: #737373;
+}
+
+#ig_app
+{
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+#ig_header
+{
+  position: fixed;
+  top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--app-primary-text-color);
+  background-color: #FFF;
+  z-index: 10;
+}
+
+#ig_header img
+{
+  height: 38px;
+}
+
+#ig_header i.fa
+{
+  position: relative;
+  font-weight: bold;
+}
+
+#ig_add_post
+{
+  font-size: 28px;
+  margin-right: 24px;
+  margin-top: 2px;
+}
+
+#ig_message i.fa.fa-comment-o
+{
+  font-size: 28px;
+  margin-right: 10px;
+  top: -2px;
+}
+
+#ig_message i.fa.fa-bolt
+{
+  position: absolute;
+  font-size: 14px;
+  transform-origin: center center;
+  transform: rotate(45deg);
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+/**/
+
+#ig_header_stories
+{
+  margin-top: 25px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
+
+#ig_header_stories .ig_friend .ig_story_img {
+  display: block;
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  border-radius: 100%;
+}
+
+#ig_header_stories .ig_user img
+{
+  position: relative;
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35),
+              inset 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+#ig_header_stories .ig_user .ig_add_story
+{
+  display: block;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  font-size: 15.5px;
+  background-color: #0194f6;
+  line-height: 20px;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+  margin-top: -20px;
+  margin-right: 15px;
+  border: 2px solid #FFF;
+}
+
+#ig_header_stories .ig_user .ig_story_caption
+{
+  position: relative;
+  display: block;
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+#ig_header_stories .ig_friend .ig_story_img
+{
+  transform: scale(1.2);
+}
+
+#ig_header_stories .ig_friend img
+{
+  transform: scale(0.94);
+  border: 4px solid #FFF;
+}
+
+/**/
+#ig_posts 
+{
+  margin-top: 0px;
+}
+
+#ig_posts > div.row
+{
+  margin-bottom: 10px;
+}
+
+#ig_posts .ig_post_head
+{
+  height: 55px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+#ig_posts .ig_post_head li
+{
+  float: left;
+  list-style: none;
+}
+
+#ig_posts .ig_post_head li img
+{
+  width: 40px;
+  border-radius: 100%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+#ig_posts .ig_post_head li:first-child,
+#ig_posts .ig_post_head li:last-child
+{
+  width: 11%;
+}
+
+#ig_posts .ig_post_head li:nth-child(2)
+{
+  width: 60%;
+}
+
+#ig_posts .ig_post_head li .ig_post_name_desc
+{
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+#ig_posts .ig_post_head li .ig_post_name_desc span
+{
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: -5px;
+  letter-spacing: 0.5px;
+}
+
+#ig_posts .ig_post_head .ig_post_options
+{
+  position: absolute;
+  display: inline-block;
+  right: 20px;
+  width: 3.2px;
+  height: 3.2px;
+  background-color: rgba(0, 0, 0, 1.0);
+  border-radius: 100%;
+  box-shadow: 0 7px 0 0 rgba(0, 0, 0, 1.0),
+              0 14px 0 0 rgba(0, 0, 0, 1.0);
+  margin-top: 10px;
+}
+
+#ig_posts .ig_post_content img,
+#ig_posts .ig_post_content video
+{
+  width: 100%;
+}
+
+/**/
+
+#ig_posts .ig_post_action
+{
+  position: relative;
+  margin-top: -5px;
+}
+
+#ig_posts .ig_post_action ul
+{
+  padding-left: 15px;
+}
+
+#ig_posts .ig_post_action ul li
+{
+  float: left;
+  list-style: none;
+  width: 12%;
+  text-align: left;
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 0 0 var(--app-primary-text-color);
+}
+
+#ig_posts .ig_post_action ul li:last-child
+{
+  width: 64%;
+  padding-right: 20px !important;
+  text-align: right;
+}
+
+#ig_posts .ig_post_action ul li i.fa-comment-o
+{
+  transform-origin: center center;
+  transform: rotateY(180deg);
+}
+
+#ig_posts .ig_post_likes
+{
+  position: relative;
+  top: 5px;
+  margin-bottom: 12px;
+}
+
+#ig_posts .ig_post_likes .ig_user_imgs
+{
+  margin-left: -2px;
+}
+
+#ig_posts .ig_post_likes .ig_user_imgs img
+{
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+}
+
+#ig_posts .ig_post_likes .ig_user_imgs img:not(:first-child)
+{
+  margin-left: -10px;
+}
+
+#ig_posts .ig_post_likes
+{
+  font-size: 16px;
+  margin-left: 15px;
+  font-weight: 500;
+  color: var(--app-secondary-text-color);
+}
+
+#ig_posts .ig_post_likes span
+{
+  color: var(--app-primary-text-color);
+  font-weight: 800;
+}
+
+.ig_liked i
+{
+  color: #ed4956;
+  text-shadow: none !important;
+}
+
+#ig_posts .ig_post_details
+{
+  margin-left: 15px;
+  margin-top: 2px;
+}
+
+.ig_post_details span.ig_user
+{
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--app-primary-text-color);
+}
+
+.ig_post_details
+{
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.ig_post_details span.ig_tags
+{
+  color: rgba(0, 55, 107, 1.0)
+}
+
+.ig_post_details span.ig_more
+{
+  color: var(--app-secondary-text-color);
+}
+
+#ig_posts .ig_post_comments
+{
+  margin-left: 15px;
+  margin-top: 2px;
+  font-size: 18.5px;
+  font-weight: 500;
+  color: var(--app-secondary-text-color);
+}
+
+#ig_posts .ig_post_datetime
+{
+  margin-left: 15px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--app-secondary-text-color);
+}
+
+/**/
+
+#ig_footer
+{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #FFF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+#ig_footer ul li
+{
+  float: left;
+  width: 20%;
+  list-style: none;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#ig_footer ul li i.fa-heart-o
+{
+  text-shadow: 1px 0 0 #000;
+}
+
+#ig_footer ul li img
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-top: -4px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35),
+              inset 0 0 5px rgba(0, 0, 0, 0.9);
+}

@@ -1,0 +1,11 @@
+/* Establece una altura máxima para el carrusel */
+.carousel-inner {
+    max-height: 600px; /* Ajusta este valor según tus necesidades */
+}
+
+/* Ajusta la altura del carrusel para pantallas más pequeñas */
+@media (max-width: 768px) { /* Para dispositivos con pantalla menor a 768px */
+    .carousel-inner {
+        max-height: 400px; /* Ajusta este valor según tus necesidades */
+    }
+}

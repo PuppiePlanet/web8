@@ -1,0 +1,46 @@
+#contenedorCarrusel {
+  position: relative;
+}
+#ig_header_stories {         
+overflow-x: auto;
+white-space: nowrap;
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+#ig_header_stories::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera*/
+}
+
+.ig_friend {
+display: inline-block;
+margin: 0 10px;
+}
+
+.ig_story_img {
+width: 100px;
+height: 100px;
+object-fit: cover;
+border-radius: 50%;
+}   
+#btnIzquierda, #btnDerecha {
+  position: absolute; /* Posicionamiento absoluto */
+  top: 50%; /* Centrado vertical */
+  transform: translateY(-50%); /* Ajuste fino de la posición vertical */          
+  cursor: pointer; /* Cursor en forma de mano al pasar sobre el botón */
+  z-index: 10; /* Asegura que los botones estén sobre otros elementos */
+  font-size: 34px; /* Ajusta el tamaño según necesites */
+  color: #fff; /* Cambia el color según tu diseño */
+}
+
+#btnIzquierda {
+  left: 15px; /* Posición desde el lado izquierdo del contenedor */
+}
+
+#btnDerecha {
+  right:15px; /* Posición desde el lado derecho del contenedor */
+}
+
+#btnIzquierda:hover, #btnDerecha:hover {
+color: #ccc; /* Cambia el color al pasar el mouse */
+}

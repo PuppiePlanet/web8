@@ -1,0 +1,21 @@
+.btn.btn-puppie-color {
+    color:white !important;
+    background-color: #99c2c2 !important;
+    border-color: #99d9d9 !important;
+}
+
+.btn.btn-puppie-color:hover, .btn-puppie-color:focus {
+    color:white !important;
+    background-color: #7fcbcb !important;  
+    border-color: #7fcbcb !important;
+}
+.center-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.link-puppie-primary {
+    color: rgba(127, 203, 203, 1) !important; /* Color del enlace */
+    text-decoration-color: rgba(127, 203, 203, 1) !important; /* Color de la línea de subrayado */
+}

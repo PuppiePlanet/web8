@@ -1,0 +1,126 @@
+
+
+/* Asegúrate de que el html y body ocupen toda la altura */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    flex-shrink: 0;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    flex-shrink: 0;			
+    padding: 10px;
+    text-align: center;
+}
+
+div.card-body video.card-video.custom-video {
+    width: 100%;
+    height: 400px;
+    object-fit: contain; /* El video se ajustará dentro del contenedor sin recortarse */
+    background-color: black; /* Agrega un fondo negro para las barras laterales */
+}	
+
+    /* Asegúrate de que el botón y la imagen se posicionen correctamente */
+    .preview-container {
+        position: relative;
+        width: 150px;
+        height: 150px;
+    }
+
+    #imagen-preview {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: white; /* Fondo blanco por defecto */
+        border-radius: 10px;
+        border: 2px solid rgb(121, 205, 205); /* Borde con el color especificado */
+        display: block; /* Siempre visible */
+    }
+
+
+    #show_mode {
+        width: 100%;
+        height: 150px;
+        z-index: 1; /* Asegúrate de que esté en frente si es necesario */
+    }
+
+    #updateProfileImage {
+        max-width: 150px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+    #mostrar {
+        max-width: 50%; /* Ajusta el tamaño de la imagen dentro del botón */
+        max-height: 50%;
+        display: inline;
+    }
+
+    .readonly-input {
+        background-color: #f0f0f0; /* Cambia el fondo para hacerlo distintivo */
+        border: 1px solid #ccc; /* Ajusta el borde para darle un estilo diferente */
+        color: #6c757d; /* Cambia el color del texto para que parezca deshabilitado */
+        cursor: not-allowed; /* Cambia el cursor para dar una señal visual */
+    }
+    h1, h2, h3, h4, h5 {
+        color: #99DAD9 !important;
+    }
+    .custom-avatar {
+        width: 150px !important; /* Forzamos el ancho */
+        height: 150px !important; /* Forzamos el alto */
+        object-fit: cover; /* Mantener las proporciones */
+    }
+    .input-error {
+        border: 1px solid red;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 0.875em;
+    }
+
+    /* Envolver select y mensaje de error */
+    .select-wrapper {
+        position: relative;
+    }
+
+    .select-wrapper .error-message {
+        position: absolute;
+        top: 100%; /* Alinea el mensaje justo debajo del select */
+        left: 0;
+        margin-top: 1px; /* Ajuste para el espacio entre select y mensaje */
+        color: red;
+        font-size: 0.875em;
+        width: 100%; /* Para que el mensaje ocupe el ancho del select */
+    }
+
+    /* Cambia el color al pasar el mouse */
+    .dropdown-item:hover {
+        color: #99DAD9 !important; /* Color cuando pasas el mouse */
+    }
+
+    /* Cambia el color cuando el enlace está activo */
+    .dropdown-item.active,
+    .dropdown-item:active {
+        color: #99DAD9 !important; /* Color para la opción activa */
+    }
+
+    /* Opcional: Cambia el color de fondo cuando están activos */
+    .dropdown-item.active,
+    .dropdown-item:active {
+        background-color: transparent !important;
+    }
